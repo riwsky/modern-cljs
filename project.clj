@@ -10,16 +10,16 @@
 
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [compojure "1.1.5"]
-                 [domina "1.0.0"]
                  [hiccups "0.2.0"]
                  [com.cemerick/shoreleave-remote-ring "0.0.2"]
-                 [shoreleave/shoreleave-remote "0.2.2"]]
+                 [shoreleave/shoreleave-remote "0.2.2"]
+                 [org.clojure/google-closure-library-third-party "0.0-2029"]]
 
   :plugins [[lein-cljsbuild "0.2.10"]
             [lein-ring "0.8.0-SNAPSHOT"]]
 
   ;; enable cljsbuild tasks support
-  :hooks [leiningen.cljsbuild]
+  ;; :hooks [leiningen.cljsbuild]
 
   ;; ring tasks configuration
   :ring {:handler modern-cljs.remotes/app}
